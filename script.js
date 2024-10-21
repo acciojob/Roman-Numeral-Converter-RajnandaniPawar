@@ -11,7 +11,8 @@ function convertToRoman(num) {
 
   //your code here
 
-	    let result = '';
+    let result = '';
+	if (num === 0) return '';
     
     // Iterate over the symbols
     for (let [symbol, value] of romanSymbols) {
@@ -24,9 +25,10 @@ function convertToRoman(num) {
         }
     }
     
-    return result; 
+    return result; // Return the final Roman numeral string
 
 }
+
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
 // console.log(convertToRoman(36));
